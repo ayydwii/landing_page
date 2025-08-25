@@ -66,16 +66,15 @@
     justify-content: space-between;
     align-items: stretch;
     background: #fdf4ee;
-    padding: 32px 0;
+    padding: 55px 0 57px 0;
     border-bottom: 2px solid #fff;
 }
 .tagline-item {
     flex: 1;
     text-align: center;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 500;
     color: #6d3a3a;
-    padding: 0 16px;
     border-right: 2px solid #c9a18a;
 }
 .tagline-item:last-child {
