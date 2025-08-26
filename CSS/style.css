@@ -1,8 +1,99 @@
-.logo-img {
-    height: 66px;
-    width: auto;
-    display: block;
+/* navbar check */
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;    
+	width: 100%;
+	background-color: #f8eee7;
+	color: #222;
+	height: 75px;
+	z-index: 1000;
 }
+
+.navbar-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 52px;
+	justify-content: space-between;
+}
+
+
+.navbar-logo-area {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 0px;
+	min-width: 180px;
+}
+
+.navbar-logo-img {
+	height: 74px;
+	width: 185px;
+	margin-bottom: 2px;
+}
+
+.navbar-subtitle {
+	font-size: 0.95rem;
+	color: #e74c3c;
+	font-family: 'Montserrat', Arial, sans-serif;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+.navbar-menu {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+/* .navbar-menu li {
+	margin-left: 32px;
+} */
+
+.navbar-menu a {
+	color: #222;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	transition: color 0.2s;
+}
+
+.navbar-menu a:hover {
+	color: #e74c3c;
+}
+
+.navbar-btn {
+	background-color: #D8B6A4;
+	color: #fff;
+	border-radius: 7px;
+	padding: 10px 10px;
+	font-size: 16px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+	border: none;
+	transition: background 0.2s, color 0.2s;
+}
+
+.btn-hubungi {
+  background-color: #D8B6A4; /* warna background */
+  color: #fff !important;   /* warna teks khusus */
+  border-radius: 7px;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-hubungi:hover {
+    background-color: #dabaa6;
+    color: #e74c3c;
+}
+
 /* HERO SECTION */
 .hero-section {
     background: #fff;
@@ -67,7 +158,7 @@
     align-items: stretch;
     background: #fdf4ee;
     padding: 55px 0 57px 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: none;
 }
 .tagline-item {
     flex: 1;
@@ -80,72 +171,13 @@
 .tagline-item:last-child {
     border-right: none;
 }
-/* Navbar custom sesuai gambar */
-.custom-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fdf4ee;
-    padding: 0px 60px;
-    border-bottom: 2px solid #fff;
-    font-family: 'Montserrat', Arial, sans-serif;
-}
-.navbar-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 27px;
-}
-.logo-text {
-    font-size: 28px;
-    font-weight: 500;
-    color: #6d3a3a;
-    letter-spacing: 2px;
-    line-height: 1;
-}
-.logo-sub {
-    font-size: 12px;
-    color: #e85c5c;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: -2px;
-}
-.navbar-menu {
-    display: flex;
-    gap: 0px;
-    list-style: none;
-    margin: 0 0 0 auto;
-    padding: 0;
-    flex-grow: 0;
-}
-.navbar-menu li a {
-    color: #444;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    transition: color 0.2s;
-}
-.navbar-menu li a:hover {
-    color: #e85c5c;
-}
-.navbar-btn {
-    background: #c9a18a;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 10px;
-    font-size: 15px;
-    font-weight: 400;
-    margin-left: 24px;
-    text-decoration: none;
-    transition: background 0.2s;
-}
-.navbar-btn:hover {
-    background: #a97c5c;
-    color: #fff;
-}
+
+
+
 @media (max-width: 800px) {
     .custom-navbar {
+    box-shadow: none;
+    outline: none;
         flex-direction: column;
         align-items: flex-start;
         padding: 8px 12px;
@@ -162,7 +194,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 0;
 }
 header {
     background-color: #ffffff;
