@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-        <!-- Navbar Bootstrap -->
-        <nav class="navbar navbar-expand-lg" style="background-color: #FFF4EE; height: 75px;">
-            <div class="container-fluid navbar-container">
-                <a class="navbar-brand navbar-logo-area" href="#">
-                    <img src="../img/logo.png" alt="logo" class="navbar-logo-img">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto navbar-menu">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Inspiration</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                        <li class="nav-item"><a href="#" class="btn btn-hubungi ms-2">Hubungi Kami</a></li>
-                    </ul>
-                </div>
+     <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #FFF4EE; height: 75px;">
+        <div class="container-fluid navbar-container">
+            <a class="navbar-brand navbar-logo-area" href="#">
+                <img src="../img/logo.png" alt="logo" class="navbar-logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto navbar-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inspiration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="btn btn-hubungi ms-2">Hubungi Kami</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
     <main>
     <!-- Hero Section -->
@@ -49,36 +49,31 @@
         </section>
     </main>
 
-
     <!-- Tagline Section -->
     <section class="tagline-section">
-         <div class="tagline-item">Dare To Be Different</div>
+        <div class="tagline-item">Dare To Be Different</div>
         <div class="tagline-item">Stay Chill, Stay&nbsp;Stylish</div>
         <div class="tagline-item">OOTD Ready!</div>
     </section>
-    
 
     <!-- Koleksi Section -->
-     <section class="koleksi-section" id="koleksi">
-      <h2 class="koleksi-title">Koleksi Terbaru</h2>
-      <p class="koleksi-desc">Koleksi baru, inspirasi baru. Saatnya tampil dengan energi yang berbeda</p>
-
-      <div class="koleksi-video-wrapper">
-        <img src="../img/Koleksi.png" alt="Cuplikan koleksi terbaru Roselea" class="koleksi-img" />
-        <button class="koleksi-play-btn" type="button" aria-label="Putar video koleksi">
-          <svg class="play-ico" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-            <circle cx="32" cy="32" r="32" fill="#4F7DF3"/>
-            <polygon points="26,20 48,32 26,44" fill="#fff"/>
-          </svg>
-          <span class="sr-only">Putar video</span>
-        </button>
-      </div>
-    </section>
-
+    <div class="container py-5">
+        <h2 class="section-title">Koleksi Terbaru</h2>
+        <p class="section-subtitle">Koleksi baru, inspirasi baru. Saatnya tampil dengan energi yang berbeda</p>
     
+        <div class="video-wrapper">
+        <!-- Embed video YouTube -->
+            <iframe width="100%" height="400" 
+                src="https://www.youtube.com/embed/gH1rVdXUlpo?rel=0" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/hero.js"></script>
-
 
 </body>
 </html>
