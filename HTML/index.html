@@ -57,20 +57,20 @@
     </section>
 
     <!-- Koleksi Section -->
-    <div class="container py-5">
-        <h2 class="section-title">Koleksi Terbaru</h2>
-        <p class="section-subtitle">Koleksi baru, inspirasi baru. Saatnya tampil dengan energi yang berbeda</p>
-    
-        <div class="video-wrapper">
-        <!-- Embed video YouTube -->
-            <iframe width="100%" height="400" 
-                src="https://www.youtube.com/embed/gH1rVdXUlpo?rel=0" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
+    <section class="koleksi-section">
+            <h2 class="section-title">Koleksi Terbaru</h2>
+            <p class="section-subtitle">Koleksi baru, inspirasi baru. Saatnya tampil dengan energi yang berbeda</p>
+        
+            <div class="video-wrapper">
+            <!-- Embed video YouTube -->
+                <iframe width="100%" height="400" 
+                    src="https://www.youtube.com/embed/gH1rVdXUlpo?rel=0" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+    </section>
 
     <!-- Statistik Section -->
     <section class="statistik-section">
@@ -104,6 +104,99 @@
             </div>
         </div>
     </section>
+
+    <!-- Testimoni Section -->
+    <section class="py-5 testimonial-section">
+        <div class="container">
+            <h2 class="text-center mb-3">Suara Klien</h2>
+            <p class="text-center text-muted mb-5">
+                Bukti nyata kepuasan klien yang telah bekerja sama dengan kami
+            </p>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card testimonial-card">
+                                    <div class="card-body text-center">
+                                        <img src="https://via.placeholder.com/60" class="rounded-circle mb-3" alt="Client 1">
+                                        <div class="stars mb-2">★★★★★</div>
+                                        <p class="card-text">"Bekerjasama dengan tim sangat profesional, mereka selalu siap cepat dan
+                                            memberikan solusi yang tepat pada kami."</p>
+                                        <h6 class="mb-0">Michael Jackson</h6>
+                                        <small class="text-muted">CEO Kafe Minimalis</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-3 d-none d-md-block">
+                                <div class="card testimonial-card">
+                                    <div class="card-body text-center">
+                                        <img src="https://via.placeholder.com/60" class="rounded-circle mb-3" alt="Client 2">
+                                        <div class="stars mb-2">★★★★★</div>
+                                        <p class="card-text">"Jasa mereka yang diberikan sangat membantu dan membuat usaha kami
+                                            berjalan lancar sesuai harapan."</p>
+                                        <h6 class="mb-0">Dwi Wahyuningsih</h6>
+                                        <small class="text-muted">Pemilik Restoran Fine Dining</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card testimonial-card">
+                                    <div class="card-body text-center">
+                                        <img src="https://via.placeholder.com/60" class="rounded-circle mb-3" alt="Client 3">
+                                        <div class="stars mb-2">★★★★★</div>
+                                        <p class="card-text">"Hasilnya melebihi ekspektasi kami, mereka benar-benar profesional dan
+                                            komunikatif."</p>
+                                        <h6 class="mb-0">Stef Bambang</h6>
+                                        <small class="text-muted">Direktur Startup Tech</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-3 d-none d-md-block">
+                                <div class="card testimonial-card">
+                                    <div class="card-body text-center">
+                                        <img src="https://via.placeholder.com/60" class="rounded-circle mb-3" alt="Client 4">
+                                        <div class="stars mb-2">★★★★★</div>
+                                        <p class="card-text">"Mereka selalu memberikan solusi kreatif dan layanan terbaik, sangat
+                                            direkomendasikan!"</p>
+                                        <h6 class="mb-0">Ayu Kartika</h6>
+                                        <small class="text-muted">Owner Toko Fashion</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            <!-- Custom navigation buttons -->
+        <div class="d-flex justify-content-center mt-4 gap-3">
+            <button class="carousel-control-prev custom-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next custom-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+            </div>
+        </div>
+</section>
+
 
 <script src="../js/bootstrap.bundle.js"></script>
 <script src="../js/hero.js"></script>
