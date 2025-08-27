@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roselea</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Navbar check -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-logo-area">
-                <img src="../img/logo.png" alt="logo" class="navbar-logo-img">
+        <!-- Navbar Bootstrap -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #FFF4EE; height: 75px;">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand navbar-logo-area" href="#">
+                    <img src="../img/logo.png" alt="logo" class="navbar-logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto navbar-menu">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Inspiration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="btn btn-hubungi ms-2">Hubungi Kami</a></li>
+                    </ul>
+                </div>
             </div>
-            
-            <ul class="navbar-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="btn-hubungi">Hubungi Kami</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
 
     <main>
-        <!-- Hero Section -->
+    <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-bg">
+                <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <h1>Elevate Your Everyday Look</h1>
                     <p>Tampil anggun dan percaya diri dengan koleksi eksklusif dari Roselea &mdash; karena setiap detail berarti</p>
                     <div class="carousel-dots">
-                        <span class="dot"></span>
+                        <span class="dot active"></span>
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
@@ -43,6 +48,7 @@
             </div>
         </section>
     </main>
+
 
     <!-- Tagline Section -->
     <section class="tagline-section">
@@ -70,6 +76,9 @@
     </section>
 
     
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/hero.js"></script>
+
 
 </body>
 </html>
