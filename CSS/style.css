@@ -197,15 +197,16 @@ nav ul li {
 
 /* Koleksi cheeeck */
 .section-title {
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: 700;
   text-align: center;
-  color: #222;
+  color: #2A2A2A;
+  padding;
 }
 
 .section-subtitle {
   font-size: 1rem;
-  color: #777;
+  color: #666666;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -364,15 +365,18 @@ body {
     max-width: 1400px;
     background-color: #FFF4EE;
     margin: 0 auto;
-    padding: 75px 0px;
+    padding: 75px 0px 0px 0px;
 }
 
 .section-title {
+    max-width: 500px;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;  /* 🔥 bikin elemen block otomatis ke tengah */
     color: #2A2A2A;
+    text-align: center;   /* 🔥 teksnya rata tengah */
 }
+
 
 .section-description {
     text-align: center;
@@ -391,7 +395,7 @@ body {
 .gender-card {
     position: relative;
     width: 1440px;
-    height: 772;
+    /* height: 772; */
     overflow: hidden;
 }
 
@@ -400,23 +404,27 @@ body {
     height: auto;
     display: block;
 }
+
 .gender-overlay {
-    position: absolute;
-    top: 70%;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    color: #fff;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center; /* 🔥 semua teks di tengah */
+  color: #fff;
 }
 
 .gender-title {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+  font-size: 35px;
 }
 
 .gender-description {
-    font-size: 1rem;
+  font-size: 16px;
 }
+
 
 
 
