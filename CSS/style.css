@@ -1,8 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding-top: 0;
+/* Import Playfair Display dari folder fonts */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+body {
+      font-family: 'Poppins', sans-serif;
+      background: #fffaf5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+}
+
 header {
     background-color: #ffffff;
     padding: 0;
@@ -61,9 +71,7 @@ header {
 	margin: 0;
 	padding: 0;
 }
-/* .navbar-menu li {
-	margin-left: 32px;
-} */
+
 .navbar-menu a {
 	color: #2A2A2A;
 	text-decoration: none;
@@ -225,63 +233,132 @@ nav ul li {
 
 .statistik-item {
   padding: 0px 5px;
+  font-family: 'Playfair Display';
 }
 
 .statistik-angka {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 550;
   color: #985F6F; /* warna angka */
 }
 
 .statistik-label {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.95rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
   color: #A78C7B; /* warna label */
   margin-top: 5px;
 }
 
 /* Testimoni Cheeeck */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.testimonial-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
 .testimonial-section h2 {
+  font-size: 28px;
   font-weight: 600;
-  color: #4b2c2c;
+  margin-bottom: 8px;
+  color: #2A2A2A;
+}
+
+.testimonial-section p {
+  color: #A78C7B;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.6s ease;
 }
 
 .testimonial-card {
-  border: none;
+  background: FDF9F7;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-  padding: 20px;
-  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 40px 15px 20px; 
+  padding: 20px 20px;
+  width: 420px;
+  height: 204px;
+  text-align: left;
+  flex-shrink: 0;
+  position: relative;
 }
 
-.testimonial-card .stars {
-  color: #d4a373;
-  font-size: 1.2rem;
-}
-
-/* Custom carousel navigation */
-.custom-control {
-  width: 50px;
-  height: 50px;
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   background: #fff;
-  border: 1px solid #c8b7b7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
 }
 
-.custom-control:hover {
-  background: #f5ebe6;
+.stars {
+  color: #f7b733;
+  margin: 10px 0 10px;
+  font-size: 18px;
 }
 
-.custom-icon {
-  filter: invert(50%) sepia(20%) saturate(200%) hue-rotate(330deg);
-  width: 20px;
-  height: 20px;
+.testimonial-text {
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 15px;
 }
+
+.author {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.role {
+  font-size: 15px;
+  color: #888888;
+}
+
+/* Navigation Buttons */
+.slider-nav {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.slider-nav button {
+  border: none;
+  background: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 18px;
+}
+
+.slider-nav button:hover {
+  background: #eee;
+}
+
 
 
 
@@ -308,8 +385,8 @@ nav ul li {
 @media (max-width: 640px) {
   /* Koleksi Section Styling */
   .koleksi-section {
-    background-color: #fdf4ee;
-    padding: 75px 0;
+    background-color: #FFF9F2;
+    padding: 75px 75px;
     text-align: center;
   }
   
@@ -344,9 +421,10 @@ nav ul li {
     box-shadow: 0 12px 24px rgba(0,0,0,0.12);
   }
   
-  .koleksi-play-btn {
-    position: absolute;
-    inset: 0;
+    .testimonial-section h2,
+    .testimonial-section p {
+      font-family: 'Playfair Display', serif;
+    }
     margin: auto;
     width: 64px;
     height: 64px;
@@ -404,6 +482,7 @@ nav ul li {
   
   @media (max-width: 500px) {
     .koleksi-section {
+      background-color: #FFF9F2;
       padding: 36px 0;
     }
     .koleksi-title {

@@ -57,7 +57,7 @@
     </section>
 
     <!-- Koleksi Section -->
-    <section class="koleksi-section">
+    <section class="koleksi-section py-5">
             <h2 class="section-title">Koleksi Terbaru</h2>
             <p class="section-subtitle">Koleksi baru, inspirasi baru. Saatnya tampil dengan energi yang berbeda</p>
         
@@ -106,100 +106,69 @@
     </section>
 
     <!-- Testimoni Section -->
-    <section class="py-5 testimonial-section">
-        <div class="container">
-            <h2 class="text-center mb-3">Suara Klien</h2>
-            <p class="text-center text-muted mb-5">
-                Bukti nyata kepuasan klien yang telah bekerja sama dengan kami
-            </p>
+    <section class="testimonial-section">
+        <h2>Suara Klien</h2>
+        <p>Bukti nyata kepuasan klien yang telah bekerja sama dengan kami</p>
 
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="card testimonial-card">
-                                    <div class="card-body text-center">
-                                        <img src="https://via.placeholder.com/60" class="rounded-circle mb-3" alt="Client 1">
-                                        <div class="stars mb-2">★★★★★</div>
-                                        <p class="card-text">"Bekerjasama dengan tim sangat profesional, mereka selalu siap cepat dan
-                                            memberikan solusi yang tepat pada kami."</p>
-                                        <h6 class="mb-0">Michael Jackson</h6>
-                                        <small class="text-muted">CEO Kafe Minimalis</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-3 d-none d-md-block">
-                                <div class="card testimonial-card">
-                                    <div class="card-body text-center">
-                                        <img src="https://via.placeholder.com/60" class="rounded-circle mb-3" alt="Client 2">
-                                        <div class="stars mb-2">★★★★★</div>
-                                        <p class="card-text">"Jasa mereka yang diberikan sangat membantu dan membuat usaha kami
-                                            berjalan lancar sesuai harapan."</p>
-                                        <h6 class="mb-0">Dwi Wahyuningsih</h6>
-                                        <small class="text-muted">Pemilik Restoran Fine Dining</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="card testimonial-card">
-                                    <div class="card-body text-center">
-                                        <img src="https://via.placeholder.com/60" class="rounded-circle mb-3" alt="Client 3">
-                                        <div class="stars mb-2">★★★★★</div>
-                                        <p class="card-text">"Hasilnya melebihi ekspektasi kami, mereka benar-benar profesional dan
-                                            komunikatif."</p>
-                                        <h6 class="mb-0">Stef Bambang</h6>
-                                        <small class="text-muted">Direktur Startup Tech</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-3 d-none d-md-block">
-                                <div class="card testimonial-card">
-                                    <div class="card-body text-center">
-                                        <img src="https://via.placeholder.com/60" class="rounded-circle mb-3" alt="Client 4">
-                                        <div class="stars mb-2">★★★★★</div>
-                                        <p class="card-text">"Mereka selalu memberikan solusi kreatif dan layanan terbaik, sangat
-                                            direkomendasikan!"</p>
-                                        <h6 class="mb-0">Ayu Kartika</h6>
-                                        <small class="text-muted">Owner Toko Fashion</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="slider-container">
+            <div class="slider" id="slider">
+            <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/60?img=12" alt="profile">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Rebranding yang dilakukan tim sangat profesional. Hasilnya melebihi ekspektasi dan berdampak positif pada bisnis kami."
+                    </p>
+                    <p class="author">Michael Jackson</p>
+                    <p class="role">CEO Kafe Minimalis</p>
                 </div>
 
-            <!-- Custom navigation buttons -->
-        <div class="d-flex justify-content-center mt-4 gap-3">
-            <button class="carousel-control-prev custom-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next custom-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+                <img src="../img/dwi.png" alt="profile">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">
+                    "Foto makanan yang dihasilkan sangat menarik dan berhasil meningkatkan penjualan menu kami secara signifikan."
+                </p>
+                <p class="author"></p>Dwi Wahyuningsih</p>
+                <p class="role">Pemilik Restoran Fine Dining</p>
+            </div>
 
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/60?img=33" alt="profile">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">
+                    "Identitas merek yang dibuatkan sangat membantu kami membangun kepercayaan pelanggan."
+                </p>
+                <p class="author">Budi Hartanto</p>
+                <p class="role">Direktur Startup Tech</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/60?img=33" alt="profile">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">
+                    "Identitas merek yang dibuatkan sangat membantu kami membangun kepercayaan pelanggan."
+                </p>
+                <p class="author">Budi Hartanto</p>
+                <p class="role">Direktur Startup Tech</p>
+            </div>
 
             </div>
         </div>
-</section>
+
+        <!-- Navigasi -->
+        <div class="slider-nav">
+            <button onclick="moveSlide(-1)">‹</button>
+            <button onclick="moveSlide(1)">›</button>
+        </div>
+    </section>
 
 
 <script src="../js/bootstrap.bundle.js"></script>
 <script src="../js/hero.js"></script>
+<script src="../js/slider.js"></script>
 
 </body>
 </html>
