@@ -359,7 +359,75 @@ body {
   background: #eee;
 }
 
+.container {
+    max-width: 1400px;
+    background-color: #FFF4EE;
+    margin: 0 auto;
+    padding: 75px 0px;
+}
 
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2A2A2A;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+    justify-items: center;
+}
+
+.gender-section {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.gender-card {
+    position: relative;
+    width: 1440px;
+    height: 772;
+    overflow: hidden;
+}
+
+.gender-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gender-card:hover .gender-image {
+    transform: scale(1.1);
+}
+
+.gender-overlay {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transition: top 0.3s ease;
+}
+
+.gender-card:hover .gender-overlay {
+    top: 50%;
+}
+
+.gender-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.gender-description {
+    font-size: 1rem;
+}
 
 
 
