@@ -35,26 +35,20 @@
     <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-bg">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1>Elevate Your Everyday Look</h1>
-                    <p>Tampil anggun dan percaya diri dengan koleksi eksklusif dari Roselea &mdash; karena setiap detail berarti</p>
-                    <div class="carousel-dots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Elevate Your Everyday Look</h1>
+                        <p class="hero-subtitle">Tampil anggun dan percaya diri dengan koleksi eksklusif dari Roselea — karena setiap detail berarti</p>
+                        <div class="hero-indicators">
+                            <span class="hero-dot active"></span>
+                            <span class="hero-dot"></span>
+                            <span class="hero-dot"></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- Tagline Section -->
-    <section class="tagline-section">
-        <div class="tagline-item">Dare To Be Different</div>
-        <div class="tagline-item">Stay Chill, Stay&nbsp;Stylish</div>
-        <div class="tagline-item">OOTD Ready!</div>
-    </section>
 
     <!-- Koleksi Section -->
     <section class="koleksi-section py-5">
@@ -75,93 +69,118 @@
     <!-- Statistik Section -->
     <section class="statistik-section">
         <div class="container">
-            <div class="row justify-content-center align-items-center text-center g-0">
-                <div class="col-6 col-md-3 statistik-item">
-                    <div class="statistik-angka">25.000+</div>
-                    <div class="statistik-label">Pelanggan Puas</div>
+            <div class="row justify-content-center">
+                <div class="col-md-auto">
+                    <span class="tagline-text">Dare To Be Different</span>
                 </div>
-                <div class="col-auto d-none d-md-block statistik-divider">
-                    <div class="vr h-100 mx-3"></div>
+                <div class="col-md-auto">
+                    <span class="tagline-text">Stay Chill, Stay Stylish</span>
                 </div>
-                <div class="col-6 col-md-3 statistik-item">
-                    <div class="statistik-angka">10.000+</div>
-                    <div class="statistik-label">Produk Terjual per Bulan</div>
-                </div>
-                <div class="col-auto d-none d-md-block statistik-divider">
-                    <div class="vr h-100 mx-3"></div>
-                </div>
-                <div class="col-6 col-md-2 statistik-item">
-                    <div class="statistik-angka">150+</div>
-                    <div class="statistik-label">Mitra &amp; Toko Resmi</div>
-                </div>
-                <div class="col-auto d-none d-md-block statistik-divider">
-                    <div class="vr h-100 mx-3"></div>
-                </div>
-                <div class="col-6 col-md-2 statistik-item">
-                    <div class="statistik-angka">4.9/5</div>
-                    <div class="statistik-label">Rating Kepuasan Pelanggan</div>
+                <div class="col-md-auto">
+                    <span class="tagline-text">OOTD Ready!</span>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Testimoni Section -->
     <section class="testimonial-section">
         <h2>Suara Klien</h2>
         <p>Bukti nyata kepuasan klien yang telah bekerja sama dengan kami</p>
 
-        <div class="slider-container">
-            <div class="slider" id="slider">
-            <!-- Card 1 -->
-                <div class="testimonial-card">
-                    <img src="https://i.pravatar.cc/60?img=12" alt="profile">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Rebranding yang dilakukan tim sangat profesional. Hasilnya melebihi ekspektasi dan berdampak positif pada bisnis kami."
-                    </p>
-                    <p class="author">Michael Jackson</p>
-                    <p class="role">CEO Kafe Minimalis</p>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="https://i.pravatar.cc/60?img=12" alt="profile">
+                                <div class="stars">★★★★★</div>
+                                <p class="testimonial-text">
+                                    "Rebranding yang dilakukan tim sangat profesional. Hasilnya melebihi ekspektasi."
+                                </p>
+                                <p class="author">Michael Jackson</p>
+                                <p class="role">CEO Kafe Minimalis</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="img/dwi.png" alt="profile">
+                                <div class="stars">★★★★★</div>
+                                <p class="testimonial-text">
+                                    "Foto makanan yang dihasilkan sangat menarik dan meningkatkan penjualan menu kami."
+                                </p>
+                                <p class="author">Dwi Wahyuningsih</p>
+                                <p class="role">Pemilik Restoran Fine Dining</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="https://i.pravatar.cc/60?img=33" alt="profile">
+                                <div class="stars">★★★★★</div>
+                                <p class="testimonial-text">
+                                    "Identitas merek yang dibuatkan sangat membantu kami membangun kepercayaan pelanggan."
+                                </p>
+                                <p class="author">Budi Hartanto</p>
+                                <p class="role">Direktur Startup Tech</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            <!-- Card 2 -->
-            <div class="testimonial-card">
-                <img src="../img/dwi.png" alt="profile">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">
-                    "Foto makanan yang dihasilkan sangat menarik dan berhasil meningkatkan penjualan menu kami secara signifikan."
-                </p>
-                <p class="author"></p>Dwi Wahyuningsih</p>
-                <p class="role">Pemilik Restoran Fine Dining</p>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/60?img=45" alt="profile">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Layanan cepat dan hasil sangat memuaskan. Akan bekerja sama lagi."
+                    </p>
+                    <p class="author">Siti Rahma</p>
+                    <p class="role">Manager Marketing</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/60?img=20" alt="profile">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Proses kerjasama sangat mudah dan profesional. Sangat direkomendasikan!"
+                    </p>
+                    <p class="author">Andi Pratama</p>
+                    <p class="role">Founder Startup</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/60?img=50" alt="profile">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Desain yang dibuat sangat sesuai dengan kebutuhan kami. Kreatif dan efektif."
+                    </p>
+                    <p class="author">Lisa Kusuma</p>
+                    <p class="role">Creative Director</p>
+                    </div>
+                </div>
+                </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/60?img=33" alt="profile">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">
-                    "Identitas merek yang dibuatkan sangat membantu kami membangun kepercayaan pelanggan."
-                </p>
-                <p class="author">Budi Hartanto</p>
-                <p class="role">Direktur Startup Tech</p>
             </div>
 
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/60?img=33" alt="profile">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">
-                    "Identitas merek yang dibuatkan sangat membantu kami membangun kepercayaan pelanggan."
-                </p>
-                <p class="author">Budi Hartanto</p>
-                <p class="role">Direktur Startup Tech</p>
-            </div>
-
-            </div>
-        </div>
-
-        <!-- Navigasi -->
-        <div class="slider-nav">
-            <button onclick="moveSlide(-1)">‹</button>
-            <button onclick="moveSlide(1)">›</button>
+            <!-- Navigasi -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
@@ -189,11 +208,441 @@
         </div>
     </div>
 
+    <!-- Inspirasi Section -->
+    <section class="koleksi-section" id="koleksi">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="koleksi-search-wrapper">
+            <input type="text" class="koleksi-search" placeholder="Cari apa?">
+            <button class="koleksi-btn">Cari</button>
+            </div>
+
+            <div class="row g-3 koleksi-grid">
+            <!-- Foto Kiri Besar -->
+            <div class="col-md-6">
+                <div class="koleksi-card">
+                <img src="../img/Kategory1.png" alt="Streetwear Natural Look">
+                <div class="koleksi-overlay">
+                    <h3>Streetwear Natural Look</h3>
+                    <p>Gaya kasual yang memancarkan ketenangan dan keanggunan</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Foto Kanan -->
+            <div class="col-md-6">
+                <div class="row g-3">
+                <!-- Foto 2 -->
+                <div class="col-md-6">
+                    <div class="koleksi-card small">
+                    <img src="../img/Kategory2.png" alt="Elegant Formal Look">
+                    <div class="koleksi-overlay">
+                        <h3>Elegant Formal Look</h3>
+                        <p>Perlihatkan gaya profesional dengan sentuhan berkelas</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- Foto 3 -->
+                <div class="col-md-6">
+                    <div class="koleksi-card small">
+                    <img src="../img/Kategory3.png" alt="Casual Unisex">
+                    <div class="koleksi-overlay">
+                        <h3>Casual Unisex</h3>
+                        <p>Fleksibel, stylish, serbaguna</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- Foto 4 -->
+                <div class="col-md-12">
+                    <div class="koleksi-card wide">
+                    <img src="../img/Kategory4.png" alt="Flatlay Accessories">
+                    <div class="koleksi-overlay">
+                        <h3>Flatlay Accessories</h3>
+                        <p>Sentuhan akhir yang menyempurnakan gaya</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="new-arrivals-section">
+        <div class="new-arrivals-container">
+            <h2 class="new-arrivals-title">New Arrivals</h2>
+            <p class="new-arrivals-subtitle">Eksplorasi gaya baru dengan sentuhan elegan dan berkelas.</p>
+
+            <div class="new-arrivals-grid">
+            <!-- Card 1 -->
+                <div class="arrival-card">
+                    <img src="../img/Linen Oversized Shirt.png" alt="Linen Oversized Shirt" class="arrival-img">
+                    <div class="arrival-content">
+                        <h3 class="arrival-name">Linen Oversized Shirt</h3>
+                        <p class="arrival-desc">
+                            Kemeja oversized berbahan linen yang elegan dan bernapas, cocok untuk sehari-hari.
+                        </p>
+                        <p class="arrival-price">Rp299.000</p>
+                        <button class="arrival-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+            <!-- Card 2 -->
+                <div class="arrival-card">
+                    <img src="../img/Terra Cotton Pants.png" alt="Linen Oversized Shirt" class="arrival-img">
+                    <div class="arrival-content">
+                        <h3 class="arrival-name">Terra Cotton Pants</h3>
+                        <p class="arrival-desc">
+                            Cocok dipadukan berbagai bahan dengan potongan clean dan detail sederhana.
+                        </p>
+                        <p class="arrival-price">Rp299.000</p>
+                        <button class="arrival-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+            <!-- Card 3 -->
+                <div class="arrival-card">
+                    <img src="../img/Sage Knit Sweater.png" alt="Sage Knit Sweater" class="arrival-img">
+                    <div class="arrival-content">
+                        <h3 class="arrival-name">Sage Knit Sweater</h3>
+                        <p class="arrival-desc">
+                            Sweater rajut dengan tekstur lembut dan breathable, membuatmu tetap stylish.
+                        </p>
+                        <p class="arrival-price">Rp399.000</p>
+                        <button class="arrival-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+            <!-- Card 4 -->
+                <div class="arrival-card">
+                    <img src="../img/Clay Bucket Hat.png" alt="Linen Oversized Shirt" class="arrival-img">
+                    <div class="arrival-content">
+                        <h3 class="arrival-name">Linen Oversized Shirt</h3>
+                        <p class="arrival-desc">
+                            Tepi simple didesain minimalis dengan material lembut, nyaman dipakai.
+                        </p>
+                        <p class="arrival-price">Rp299.000</p>
+                        <button class="arrival-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+            <!-- Card 5 -->
+                <div class="arrival-card">
+                    <img src="../img/simply-mersah-6WZtlK0Ez6w-unsplash 1.png" alt="Natural Canvas Tote Bag" class="arrival-img">
+                    <div class="arrival-content">
+                        <h3 class="arrival-name">Natural Canvas Tote Bag</h3>
+                        <p class="arrival-desc">
+                            Tas kanvas dengan detail minimalis yang cocok untuk kebutuhan sehari-hari.
+                        </p>
+                        <p class="arrival-price">Rp199.000</p>
+                        <button class="arrival-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+            <!-- Card 6 -->
+                <div class="arrival-card">
+                    <img src="../img/Bare Slide Sandals.png" alt="Adelaide Brundy Slide" class="arrival-img">
+                    <div class="arrival-content">
+                        <h3 class="arrival-name">Adelaide Brundy Slide</h3>
+                        <p class="arrival-desc">
+                            Sandal elegan dengan leather strap premium, nyaman untuk digunakan seharian.
+                        </p>
+                        <p class="arrival-price">Rp259.000</p>
+                        <button class="arrival-btn">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-arrivals-footer">
+                <button class="arrival-viewall">View All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo -->
+    <section class="promo-section py-5">
+        <div class="container text-center">
+            <h2 class="promo-title mb-2">Promo Spesial Bulan Ini</h2>
+            <p class="promo-subtitle mb-5">Dapatkan diskon dalam jumlah terbatas untuk koleksi pilihan!</p>
+
+            <div class="row justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="../img/Coffee Crop Top Hoodie & Joggers Tracksuit Set 1.png" alt="Coffee Crop Top Hoodie">
+                            <span class="promo-badge">Limited</span>
+                        </div>
+                        <div class="promo-body">
+                            <h5 class="promo-name">Coffee Crop Top Hoodie</h5>
+                            <p class="promo-price">Rp249.000</p>
+                            <button class="promo-btn">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="../img/Coffee Crop Top Hoodie & Joggers Tracksuit Set 1.png" alt="Coffee Crop Top Hoodie">
+                            <span class="promo-badge">Limited</span>
+                        </div>
+                        <div class="promo-body">
+                            <h5 class="promo-name">Coffee Crop Top Hoodie</h5>
+                            <p class="promo-price">Rp249.000</p>
+                            <button class="promo-btn">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="../img/Coffee Crop Top Hoodie & Joggers Tracksuit Set 1.png" alt="Coffee Crop Top Hoodie">
+                            <span class="promo-badge">Limited</span>
+                        </div>
+                        <div class="promo-body">
+                            <h5 class="promo-name">Coffee Crop Top Hoodie</h5>
+                            <p class="promo-price">Rp249.000</p>
+                            <button class="promo-btn">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="../img/Coffee Crop Top Hoodie & Joggers Tracksuit Set 1.png" alt="Coffee Crop Top Hoodie">
+                            <span class="promo-badge">Limited</span>
+                        </div>
+                        <div class="promo-body">
+                            <h5 class="promo-name">Coffee Crop Top Hoodie</h5>
+                            <p class="promo-price">Rp249.000</p>
+                            <button class="promo-btn">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="howitworks-section py-5">
+        <div class="container text-center">
+            <h2 class="howitworks-title">How It Works</h2>
+            <p class="howitworks-subtitle">Hanya pilih gaya sesuai keinginanmu – semuanya mudah</p>
+            
+            <div class="row justify-content-center mt-4">
+                <!-- Step 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="howitworks-item">
+                        <img src="../ikon/1.png" alt="Pilih Produk" class="howitworks-icon">
+                        <h4 class="howitworks-step">1</h4>
+                        <p class="howitworks-text">Pilih Produk</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="howitworks-item">
+                        <img src="../ikon/2.png" alt="Keranjang" class="howitworks-icon">
+                        <h4 class="howitworks-step">2</h4>
+                        <p class="howitworks-text">Tambahkan ke Keranjang</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="col-6 col-md-3 mt-4 mt-md-0">
+                    <div class="howitworks-item">
+                        <img src="../ikon/3.png" alt="Checkout" class="howitworks-icon">
+                        <h4 class="howitworks-step">3</h4>
+                        <p class="howitworks-text">Checkout</p>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="col-6 col-md-3 mt-4 mt-md-0">
+                    <div class="howitworks-item">
+                        <img src="../ikon/4.png" alt="Pesanan Dikirim" class="howitworks-icon">
+                        <h4 class="howitworks-step">4</h4>
+                        <p class="howitworks-text">Pesanan Dikirim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Gambar -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="../img/tentang.png" alt="Tentang Kami" class="img-fluid rounded shadow-sm">
+      </div>
+      <!-- Konten -->
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3">Tentang Kami</h2>
+        <p>
+          Roselea adalah brand fashion yang terinspirasi dari keanggunan dan kekuatan perempuan modern. 
+          Kami menghadirkan koleksi yang memadukan gaya elegan, sentuhan feminin, dan kenyamanan dalam setiap potongan.
+        </p>
+        <p>
+          Dengan filosofi <em>"beauty in simplicity"</em>, Roselea percaya bahwa setiap perempuan berhak tampil percaya diri tanpa harus mengorbankan kenyamanan.
+        </p>
+        <p>
+          Dari bahan pilihan hingga detail desain yang halus, setiap produk Roselea dibuat untuk menemani langkahmu — dari hari santai hingga momen istimewa. 
+          Kami hadir bukan hanya sebagai label, tapi sebagai bagian dari gaya hidupmu.
+        </p>
+        <a href="#" class="btn btn-custom">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <!-- Tim Section -->
+    <section class="team py-5">
+  <div class="container text-center">
+    <!-- Judul Section -->
+    <h2 class="fw-bold mb-2">Tim Kami</h2>
+    <p class="text-muted mb-5">Kenali orang-orang hebat di balik Roselea</p>
+
+    <!-- Grid Card -->
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card team-card h-100">
+          <img src="../img/Amanda Putri.png" class="card-img-top" alt="Amanda Putri">
+          <div class="card-body">
+            <h5 class="card-title">Amanda Putri</h5>
+            <p class="card-text text-muted">Creative Director</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card team-card h-100">
+          <img src="../img/Dimas Wibowo.png" class="card-img-top" alt="Dimas Wibowo">
+          <div class="card-body">
+            <h5 class="card-title">Dimas Wibowo</h5>
+            <p class="card-text text-muted">Fashion Designer</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card team-card h-100">
+          <img src="../img/Ratna Lestari.png" class="card-img-top" alt="Citra Lestari">
+          <div class="card-body">
+            <h5 class="card-title">Citra Lestari</h5>
+            <p class="card-text text-muted">Marketing & Branding Specialist</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card team-card h-100">
+          <img src="../img/Rico Mahendra.png" class="card-img-top" alt="Rico Mahendra">
+          <div class="card-body">
+            <h5 class="card-title">Rico Mahendra</h5>
+            <p class="card-text text-muted">Visual Stylist & Photographer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tombol -->
+    <div class="mt-4">
+      <a href="#" class="btn btn-custom">Lihat Tim</a>
+    </div>
+  </div>
+    </section>
+
+    <!-- Keunggulan Produk -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Judul Section -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Keunggulan Produk Kami</h2>
+                <p class="text-muted">Dibuat dengan detail, dirancang untuk mempesona</p>
+            </div>
+
+            <!-- Cards -->
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img src="img/desain.jpg" class="rounded-circle img-fluid" alt="Desain Eksklusif">
+                            </div>
+                            <h5 class="fw-bold">Desain Eksklusif</h5>
+                            <p class="text-muted small">
+                                Setiap koleksi kami dirancang secara eksklusif, mengikuti tren global namun tetap menghadirkan sentuhan khas lokal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img src="img/bahan.jpg" class="rounded-circle img-fluid" alt="Bahan Berkualitas">
+                            </div>
+                            <h5 class="fw-bold">Bahan Berkualitas</h5>
+                            <p class="text-muted small">
+                                Kami hanya menggunakan bahan premium yang nyaman, tahan lama, dan ramah lingkungan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100 text-center border-0">
+                    <div class="card-body">
+                        <div class="mb-3">
+                        <img src="img/jahitan.jpg" class="rounded-circle img-fluid" alt="Jahitan Presisi">
+                        </div>
+                        <h5 class="fw-bold">Jahitan Presisi</h5>
+                        <p class="text-muted small">
+                        Produk kami dibuat dengan perhatian pada setiap detail, menghasilkan jahitan yang rapi dan kuat.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100 text-center border-0">
+                    <div class="card-body">
+                        <div class="mb-3">
+                        <img src="img/ramah.jpg" class="rounded-circle img-fluid" alt="Ramah Lingkungan">
+                        </div>
+                        <h5 class="fw-bold">Ramah Lingkungan</h5>
+                        <p class="text-muted small">
+                        Kami berkomitmen pada praktik produksi yang berkelanjutan dan bertanggung jawab terhadap lingkungan.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<script src="../js/bootstrap.bundle.js"></script>
-<script src="../js/hero.js"></script>
-<script src="../js/slider.js"></script>
 
-</body>
-</html>
+
+
+
+
+
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/hero.js"></script>
+    <script src="../js/slider.js"></script>
+    </body>
+    </html>
