@@ -2,9 +2,9 @@ const heroBg = document.querySelector(".hero-bg");
 const dots = document.querySelectorAll(".dot");
 
 const images = [
-  "../img/hero1.jpg",
-  "../img/hero2.jpg",
-  "../img/hero3.jpg"
+  "assets/img/hero1.jpg",
+  "assets/img/hero2.jpg",
+  "assets/img/hero3.jpg"
 ];
 
 let index = 0;
