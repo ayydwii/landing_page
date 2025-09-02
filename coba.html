@@ -1,0 +1,35 @@
+
+/* Atur ukuran sesuai contoh */
+.card-left {
+    grid-row: span 2; /* ambil 2 baris (kartu besar) */
+    height: 520px;
+}
+
+.card-top-right {
+    height: 250px;
+}
+
+.card-mid-right {
+    height: 250px;
+}
+
+.card-bottom-right {
+    grid-column: 2; /* taruh di kolom kanan */
+    height: 233px;
+}
+
+/* Responsif biar rapi di HP */
+@media (max-width: 768px) {
+    .koleksi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-left,
+    .card-top-right,
+    .card-mid-right,
+    .card-bottom-right {
+        height: auto;
+    }
+}
+
+

@@ -177,6 +177,11 @@ nav ul li {
 
 
 /* KOLEKSI STYLING */
+.koleksi-section {
+  background-color: #FFF9F2;
+  width: 100%;
+}
+
 .section-title {
   font-size: 40px;
   font-weight: 700;
@@ -213,6 +218,7 @@ nav ul li {
 
 /* Testimoni Cheeeck */
 .testimonial-section {
+  background-color: #FFF9F2;
   text-align: center;
   padding: 60px 20px;
 }
@@ -374,6 +380,7 @@ nav ul li {
 .container-search {
   padding-left: 155px;  /* jarak kiri */
   padding-right: 156px; /* jarak kanan */
+  background-color: #FFF9F2;
 }
 
 .search-wrapper {
@@ -415,8 +422,8 @@ nav ul li {
   width: 100%;
   height: auto;
   object-fit: cover;
-  transition: 0.5s;
-  border-radius: 12px;
+  border-radius: 12px; /* opsional */
+  transition: transform 0.3s ease;
 }
 
 .card-custom:hover img {
@@ -783,13 +790,6 @@ nav ul li {
 
 
 /* ====== SEARCH PRODUCT QUERY ====== */
-.card-custom img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px; /* opsional */
-}
-
 /* Desktop (≥992px) ukuran fix */
 @media (min-width: 992px) {
   .card-left {
