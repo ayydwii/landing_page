@@ -27,67 +27,6 @@ html, body {
   transition: transform 0.3s ease; /* Animasi halus saat hover */
 }
 
-@media (max-width: 768px) {
-  .navbar-brand-img {
-    height: 24px;
-    max-width: 72px;
-  }
-}
-/* Import Playfair Display dari folder fonts */
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('../fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.search-bar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  margin-bottom: 2rem;
-}
-.search-input {
-  width: 464px;
-  height: 40px;
-  max-width: 90vw;
-  padding: 0.75rem 1.5rem;
-  border: 1.5px solid #E9A6B1;
-  border-radius: 999px;
-  background: #FFF9F2;
-  font-family: 'Playfair Display', serif;
-  font-size: 19px;
-  color: #959494;
-  outline: none;
-  transition: border-color 0.2s;
-}
-.search-input::placeholder {
-  color: #b48a8a;
-  opacity: 1;
-  font-family: 'Playfair Display', serif;
-}
-.search-button {
-  max-height:140px;
-  height: 40px;
-  padding: 0.75rem 2.5rem;
-  margin-left: 1.5rem;
-  border: none;
-  border-radius: 999px;
-  background: #E9A6B1;
-  color: #fff;
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: none;
-  transition: background 0.2s;
-}
-.search-button:hover {
-  background: #d48a8a;
-	margin-top: 2px;
-	margin-left: 2px;
-}
 .navbar-menu {
 	list-style: none;
 	display: flex;
@@ -139,7 +78,8 @@ nav ul li {
     color: #e74c3c;
 }
 
-/* hero section check */
+
+/* HERO SECTION STYLING */
 .hero-section {
   padding-top: 75px;
   position: relative;
@@ -169,6 +109,7 @@ nav ul li {
   align-items: center;
   justify-content: center;
 }
+
 .hero-content {
   text-align: center;
   color: #fff;
@@ -177,23 +118,27 @@ nav ul li {
   max-width: 700px;
   margin: 0 auto;
 }
+
 .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 9px;
   letter-spacing: 1px;
 }
+
 .hero-subtitle {
   font-size: 1.15rem;
   font-weight: 400;
   margin-bottom: 153px;
 }
+
 .hero-indicators {
   display: flex;
   justify-content: center;
   gap: 10px;
   /* margin-bottom: 158px; */
 }
+
 .hero-dot {
   width: 12px;
   height: 12px;
@@ -202,25 +147,17 @@ nav ul li {
   display: inline-block;
   transition: background 0.2s;
 }
+
 .hero-dot.active {
   background: #fff;
 }
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 1.5rem;
-  }
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  .hero-section, .hero-bg {
-    min-height: 250px;
-  }
-}
 
-/* Tagline check */
+
+/* TAGLINE STYLING */
+/* Default desktop */
 .tagline-bar {
   background-color: #FFF4EE;
-  width: 100%;   /* jangan fix 1400px */
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -229,17 +166,17 @@ nav ul li {
   font-size: 25px;
   color: #333333;
   text-align: center;
-  margin: 0; /* pastikan nggak ada margin */
+  margin: 0;
 }
 
 .tagline-bar .divider {
   border-left: 1px solid #aaa;
-  height: 75px;  /* sesuaikan dengan tinggi baru */
+  height: 75px;
   margin: 25px 88px;
 }
 
 
-/* Koleksi cheeeck */
+/* KOLEKSI STYLING */
 .section-title {
   font-size: 40px;
   font-weight: 700;
@@ -269,31 +206,10 @@ nav ul li {
   border: none;
 }
 
-/* Statistik Section */
-.statistik-section {
-  background: #FFF4EE;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
-.statistik-item {
-  padding: 0px 5px;
-  font-family: 'Playfair Display';
-}
 
-.statistik-angka {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  font-weight: 550;
-  color: #985F6F; /* warna angka */
-}
 
-.statistik-label {
-  font-family: 'Playfair Display', serif;
-  font-size: 17px;
-  color: #A78C7B; /* warna label */
-  margin-top: 5px;
-}
+
 
 /* Testimoni Cheeeck */
 .testimonial-section {
@@ -313,7 +229,6 @@ nav ul li {
   font-size: 18px;
 }
 
-/* Testimonial Card */
 .testimonial-card {
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.10);
@@ -378,6 +293,7 @@ nav ul li {
   font-family: 'Playfair Display', serif !important;
   margin-bottom: 0;
 }
+
 .testimonial-author-role {
   margin-top: 12px;
   padding-top: 8px;
@@ -388,15 +304,8 @@ nav ul li {
   width: 100%;
 }
 
-/* Custom nav button warna */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(10deg);
-}
 
-
-
-/* gender */
+/* GENDER STYLING */
 .container {
     max-width: 1400px;
     background-color: #FFF4EE;
@@ -412,7 +321,6 @@ nav ul li {
     color: #2A2A2A;
     text-align: center;   /* 🔥 teksnya rata tengah */
 }
-
 
 .section-description {
     text-align: center;
@@ -461,47 +369,8 @@ nav ul li {
   font-size: 16px;
 }
 
-/* ========== INSPIRATION SECTION ========== */
-.inspiration-section {
-  padding: 60px 20px;
-  background: #fdf9f7;
-}
 
-/* Search box */
-.search-box {
-  border: 1.5px solid #e5cfd1;
-  border-radius: 50px;
-  overflow: hidden;
-}
-
-.inspiration-input {
-  border: none;
-  box-shadow: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  background: transparent;
-}
-
-.inspiration-input:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.inspiration-btn {
-  background: #e7aab6;
-  border: none;
-  padding: 0 25px;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 50px;
-  transition: background 0.3s ease;
-}
-
-.inspiration-btn:hover {
-  background: #d98a9d;
-}
-
-/* Koleksi */
+/* SEARCH PRODUCT SECTION */
 .container-search {
   padding-left: 155px;  /* jarak kiri */
   padding-right: 156px; /* jarak kanan */
@@ -544,9 +413,10 @@ nav ul li {
 
 .card-custom img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   transition: 0.5s;
+  border-radius: 12px;
 }
 
 .card-custom:hover img {
@@ -571,7 +441,7 @@ nav ul li {
 .card-bottom-right {
   width: 635px;
   height: 233px;
-}
+} 
 
 .overlay {
   position: absolute;
@@ -594,7 +464,6 @@ nav ul li {
   font-size: 0.9rem;
   opacity: 0.9;
 }
-
 
 /* NEW ARRIVALSSSSS */
 .new-arrivals-section {
@@ -707,7 +576,7 @@ nav ul li {
   opacity: 0.8;
 }
 
-/* ===== Promo Section ===== */
+/* PROMO */
 .promo-section {
   background: #fdf4ee;
 }
@@ -913,64 +782,81 @@ nav ul li {
 
 
 
+/* ====== SEARCH PRODUCT QUERY ====== */
+.card-custom img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px; /* opsional */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 991px) {
-  .kategori-grid .card-img-top {
-    height: 180px;
-    max-height: 180px;
+/* Desktop (≥992px) ukuran fix */
+@media (min-width: 992px) {
+  .card-left {
+    width: 474px;
+    height: 520px;
   }
-  .kategori-grid .card-img-overlay {
-    padding: 16px 12px 12px 12px;
+
+  .card-top-right,
+  .card-mid-right,
+  .card-bottom-right {
+    width: 474px;
+    height: 248px;
   }
 }
 
-@media (max-width: 600px) {
-  .kategori-grid .card-img-top {
-    height: 120px;
-    max-height: 120px;
+/* Tablet & HP (≤768px) */
+@media (max-width: 768px) {
+  .card-left,
+  .card-top-right,
+  .card-mid-right,
+  .card-bottom-right {
+    width: 100%;
+    height: auto;
   }
-  .kategori-grid .card-img-overlay {
-    padding: 10px 8px 8px 8px;
+
+  .card-custom img {
+    border-radius: 8px; /* biar lebih rapih di HP */
   }
-  .kategori-grid .card-title {
-    font-size: 1rem;
+
+  .overlay h3 {
+    font-size: 1.2rem;
   }
-  .kategori-grid .card-text {
+
+  .overlay p {
     font-size: 0.9rem;
   }
 }
 
 
+/* ====== HERO SECTION QUERY ====== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .hero-section, .hero-bg {
+    min-height: 250px;
+  }
+}
 
 
-/* RESPONSIF */
+/* ====== NAVBAR QUERY ====== */
+@media (max-width: 768px) {
+  .navbar-brand-img {
+    height: 24px;
+    max-width: 72px;
+  }
+}
+/* Import Playfair Display dari folder fonts */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @media (max-width: 800px) {
     .custom-navbar {
     box-shadow: none;
@@ -989,135 +875,34 @@ nav ul li {
     }
 }
 
-@media (max-width: 640px) {
-  /* Koleksi Section Styling */
-  .koleksi-section {
-    background-color: #FFF9F2;
-    padding: 75px 75px;
-    text-align: center;
-  }
-  
-  .koleksi-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.3rem;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 10px;
-  }
-  
-  .koleksi-desc {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
-    color: #a78c7b;
-    margin: 0 auto 40px auto;
-    max-width: 700px;
-    line-height: 1.7;
-  }
-  
-  .koleksi-video-wrapper {
-    position: relative;
-    display: inline-block;
-    width: min(100%, 700px);
-    margin: 0 auto;
-  }
-  
-  .koleksi-img {
-    width: 100%;
-    display: block;
-    border-radius: 16px;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-  }
-  
-    .testimonial-section h2,
-    .testimonial-section p {
-      font-family: 'Playfair Display', serif;
-    }
-  }
-  
-  .koleksi-play-btn:hover {
-    transform: scale(1.08);
-    opacity: .92;
-  }
-  
-  .koleksi-play-btn:focus-visible {
-    outline: 3px solid #4F7DF3;
-    outline-offset: 4px;
-  }
-  
-  .play-ico {
-    width: 64px;
-    height: 64px;
-    display: block;
-    border-radius: 50%;
-    box-shadow: 0 8px 18px rgba(79,125,243,.18);
-  }
-  
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    border: 0;
-  }
-  
-  /* Responsive */
-  @media (max-width: 800px) {
-    .koleksi-section {
-      padding: 56px 0;
-    }
-    .koleksi-video-wrapper {
-      width: 100%;
-      max-width: 100%;
-    }
-    .koleksi-title {
-      font-size: 1.7rem;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .koleksi-section {
-      background-color: #FFF9F2;
-      padding: 36px 0;
-    }
-    .koleksi-title {
-      font-size: 1.2rem;
-    }
-    .koleksi-play-btn, .play-ico {
-      width: 48px;
-      height: 48px;
-    }
+
+/* ====== TAGLINE QUERY ====== */
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .tagline-bar {
+    font-size: 18px;
+    height: 80px;
   }
 
-  /* slider nav */
-.slider-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -70px;
-  z-index: 10;
+  .tagline-bar .divider {
+    height: 50px;
+    margin: 15px 40px;
+  }
 }
-.slider-nav button {
-  border: none;
-  background: #fff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 0 12px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  cursor: pointer;
-  transition: background 0.3s;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+
+/* HP kecil (≤576px) */
+@media (max-width: 576px) {
+  .tagline-bar {
+    flex-direction: column; /* teks jadi atas-bawah */
+    font-size: 16px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .tagline-bar .divider {
+    display: none; /* divider disembunyikan biar nggak maksa */
+  }
 }
+
+
+
