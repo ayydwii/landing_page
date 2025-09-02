@@ -474,9 +474,9 @@ nav ul li {
 
 /* NEW ARRIVALSSSSS */
 .new-arrivals-section {
-  background-color: #fdf4ee;
-  padding: 60px 20px;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #FFF4EE;
+  padding: 75px 78px 75px 79px;
+  font-family: 'playfair display',serif;
 }
 
 .new-arrivals-container {
@@ -485,29 +485,32 @@ nav ul li {
 }
 
 .new-arrivals-title {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 600;
-  margin-bottom: 8px;
-  color: #222;
+  margin-bottom: 7px;
+  color: #2A2A2A;
 }
 
 .new-arrivals-subtitle {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 40px;
+  font-size: 18px;
+  color: #7A7A7A;
+  margin-bottom: 60px;
 }
 
 .new-arrivals-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 79px 100px;
 }
 
 .arrival-card {
-  background: #fff;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  background: #FCFCFC;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
@@ -519,49 +522,48 @@ nav ul li {
 
 .arrival-img {
   width: 100%;
-  height: 220px;
+  height: 253px;
   object-fit: cover;
 }
 
 .arrival-content {
-  padding: 16px;
+  padding: 23px 31px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 .arrival-name {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 600;
-  color: #222;
+  color: #2E2E2E;
 }
 
 .arrival-desc {
-  font-size: 14px;
-  color: #666;
+  font-size: 20px;
+  font-weight: auto;
+  color: #7A7A7A;
   line-height: 1.4;
   flex-grow: 1;
 }
 
 .arrival-price {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
-  color: #222;
+  color: #B98E7B;
 }
 
-.arrival-btn {
+.details-product {
   align-self: flex-start;
-  background: #fdf4ee;
-  border: 1px solid #ccc;
-  padding: 6px 14px;
-  border-radius: 6px;
+  margin-left: auto;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 20px;
+  color: #333333;
   transition: background 0.3s ease;
 }
 
-.arrival-btn:hover {
-  background: #f3c5c5;
+.details-product:hover {
+  color: #f3c5c5;
 }
 
 .new-arrivals-footer {
@@ -570,17 +572,26 @@ nav ul li {
 }
 
 .arrival-viewall {
-  background: #f3c5c5;
+  background: #D8B6A4;
   border: none;
-  padding: 10px 24px;
+  padding: 6px 20px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
 
 .arrival-viewall:hover {
   opacity: 0.8;
+}
+
+.new-arrivals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 40px;
+  justify-content: center;
 }
 
 /* PROMO */
@@ -901,6 +912,19 @@ nav ul li {
 
   .tagline-bar .divider {
     display: none; /* divider disembunyikan biar nggak maksa */
+  }
+}
+
+/* ====== NEW ARRIVALS QUERY ====== */
+@media (max-width: 1024px) {
+  .new-arrivals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .new-arrivals-grid {
+    grid-template-columns: 1fr;
   }
 }
 
