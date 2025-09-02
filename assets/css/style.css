@@ -474,6 +474,7 @@ nav ul li {
 
 /* NEW ARRIVALSSSSS */
 .new-arrivals-section {
+  height: 1486px;
   background-color: #FFF4EE;
   padding: 75px 78px 75px 79px;
   font-family: 'playfair display',serif;
@@ -596,12 +597,17 @@ nav ul li {
 
 /* PROMO */
 .promo-section {
-  background: #fdf4ee;
+  background: #FFF9F2;
+}
+
+.promo-style {
+  padding: 75px 137px;
+  align-items: center;
 }
 
 .promo-title {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: extra-bold;
   color: #333;
 }
 
