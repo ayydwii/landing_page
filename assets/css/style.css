@@ -121,6 +121,7 @@ nav ul li {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  font-family: 'playfair display',serif;
 }
 .hero-bg {
   position: relative;
@@ -194,7 +195,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Georgia', serif;
+  font-family: 'playfair display',serif;
   font-size: 25px;
   color: #333333;
   text-align: center;
@@ -213,6 +214,7 @@ nav ul li {
 .koleksi-section {
   background-color: #FFF9F2;
   width: 100%;
+  font-family: 'playfair display',serif;
 }
 
 .section-title {
@@ -251,6 +253,7 @@ nav ul li {
   background-color: #FFF4EE;
   padding: 75px 0px;
   text-align: center;
+  font-family: 'playfair display',serif;
 }
 
 .stats-section .row {
@@ -289,6 +292,7 @@ nav ul li {
 .testimoni-section {
   background-color: #FFF9F2;
   text-align: center;
+  font-family: 'playfair display',serif;
 }
 
 .container-testimoni {
@@ -422,6 +426,7 @@ nav ul li {
     background-color: #FFF4EE;
     margin: 0 auto;
     padding: 75px 0px 0px 0px;
+    font-family: 'playfair display',serif;
 }
 
 .section-title {
@@ -486,6 +491,7 @@ nav ul li {
   padding-left: 155px;  /* jarak kiri */
   padding-right: 156px; /* jarak kanan */
   background-color: #FFF9F2;
+  font-family: 'playfair display',serif;
 }
 
 .search-wrapper {
@@ -577,11 +583,11 @@ nav ul li {
   opacity: 0.9;
 }
 
+
 /* ==== NEW ARRIVALSSSSS ==== */
 .new-arrivals-section {
-  height: 1486px;
   background-color: #FFF4EE;
-  padding: 75px 78px 75px 79px;
+  padding: 75px 78px;
   font-family: 'playfair display',serif;
 }
 
@@ -601,12 +607,6 @@ nav ul li {
   font-size: 18px;
   color: #7A7A7A;
   margin-bottom: 60px;
-}
-
-.new-arrivals-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 79px 100px;
 }
 
 .arrival-card {
@@ -674,13 +674,15 @@ nav ul li {
 
 .new-arrivals-footer {
   text-align: center;
-  margin-top: 40px;
+  margin: 60px 0px;
 }
 
 .arrival-viewall {
   background: #D8B6A4;
+  min-width: 140px;
+  height: auto;
   border: none;
-  padding: 6px 20px;
+  padding: 10px 42px;
   border-radius: 20px;
   font-size: 15px;
   font-weight: bold;
@@ -696,37 +698,45 @@ nav ul li {
 .new-arrivals-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px 40px;
+  gap: 79px 100px;
   justify-content: center;
 }
 
 /* ==== PROMO ==== */
 .promo-section {
   background: #FFF9F2;
-}
-
-.promo-style {
   padding: 75px 137px;
   align-items: center;
 }
 
 .promo-title {
   font-size: 40px;
-  font-weight: extra-bold;
+  font-weight: 600;
   color: #333;
+  margin-bottom: 7px;
+  font-family: 'playfair display', serif;
+  text-align: center;
 }
 
 .promo-subtitle {
   color: #666;
-  font-size: 0.95rem;
+  font-size: 18px;
+  margin-bottom: 60px;
+  font-family: 'playfair display', serif;
+  text-align: center;
 }
 
 .promo-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.2s ease;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
 .promo-card:hover {
@@ -741,17 +751,18 @@ nav ul li {
   width: 100%;
   height: auto;
   display: block;
+  padding: 0px 9px;
 }
 
 .promo-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #d57a66;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border-radius: 8px;
+  top: 0;
+  right: 0;
+  background: #EFC9BC;
+  color: #843434;
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 12px;
 }
 
 .promo-body {
@@ -762,23 +773,29 @@ nav ul li {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
+  padding: 0px 15px;
+  font-family: 'plus jakarta sans', serif;
 }
 
 .promo-price {
   font-size: 0.9rem;
   color: #999;
-  margin: 6px 0 12px;
+  padding: 0px 15px;
+  font-family: 'plus jakarta sans', serif;
 }
 
 .promo-btn {
-  background: #f3e2d9;
+  background: #D8B6A4;
   color: #6b4c3b;
   border: none;
   padding: 6px 14px;
+  margin: 0px 9px 6px 100px;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 10px;
+  color: #FFFFFF;
   transition: background 0.2s ease;
   cursor: pointer;
+  font-family: 'plus jakarta sans', serif;
 }
 
 .promo-btn:hover {
