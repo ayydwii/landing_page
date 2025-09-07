@@ -1,5 +1,35 @@
+/* === Import Font Lokal === */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('assets/fonts/playfair/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('assets/fonts/playfair/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('assets/fonts/plusjakarta/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('assets/fonts/plusjakarta/PlusJakartaSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 html, body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Playfair Display', sans-serif;
       padding: 0;
       margin: 0;
       left: 0;
@@ -16,6 +46,7 @@ html, body {
   padding: 0px 72px;
   z-index: 1050;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Styling Logo Navbar */
@@ -39,7 +70,7 @@ html, body {
 	color: #2A2A2A;
 	text-decoration: none;
 	font-size: 16px;
-	font-family: 'Montserrat', Arial, sans-serif;
+	font-family: 'Plus Jakarta Sans', sans-serif;
 	transition: color 0.2s;
 }
 .navbar-menu a:hover {
@@ -59,7 +90,7 @@ nav ul li {
 	border-radius: 7px;
 	padding: 10px 10px;
   background-color: #fdf4ee;
-	font-family: 'Montserrat', Arial, sans-serif;
+	font-family: 'Plus Jakarta Sans', sans-serif;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.07);
 	border: none;
 	transition: background 0.2s, color 0.2s;
@@ -70,7 +101,7 @@ nav ul li {
   border-radius: 7px;
   font-size: 16px;
   padding: 10px 10px;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   transition: background 0.2s, color 0.2s;
 }
 .btn-hubungi:hover {
@@ -139,7 +170,6 @@ nav ul li {
   gap: 10px;
   /* margin-bottom: 158px; */
 }
-/* ==== HERO END ==== */
 
 .hero-dot {
   width: 12px;
@@ -153,6 +183,7 @@ nav ul li {
 .hero-dot.active {
   background: #fff;
 }
+/* ==== HERO END ==== */
 
 
 /* ==== TAGLINE STYLING ==== */
@@ -214,40 +245,54 @@ nav ul li {
 }
 /* ==== KOLEKSI END ==== */
 
+
 /* ==== STATISTIK SECTION ==== */
 .stats-section {
-  padding: 50px 0;
+  background-color: #FFF4EE;
+  padding: 75px 0px;
   text-align: center;
 }
 
+.stats-section .row {
+  display: flex;
+  align-items: stretch; /* biar semua kolom punya tinggi yang sama */
+}
+
 .stats-box h3 {
-  font-size: 1.8rem;
+  font-size: 40px;
   font-weight: 600;
-  color: #915c65; /* warna angka */
+  color: #985F6F; /* warna angka */
+  padding-right: 40px;
 }
 
 .stats-box p {
   margin: 0;
-  font-size: 0.95rem;
-  color: #915c65;
+  font-size: 17px;
+  color: #A78C7B;
+  padding-right: 40px;
+}
+
+.col-md-1 {
+  display: flex;           /* aktifkan flexbox */
+  justify-content: center; /* garis tetap di tengah horizontal */
+  align-items: center;     /* garis sejajar vertikal */
 }
 
 .divider {
-  border-left: 1px solid #c9a8a9;
+  border-left: 1px solid #c9a8a9; /* garis vertikal */
   height: 50px;
-  margin: auto;
 }
 /* ==== STATISTIK END ==== */
 
 
-
-
-
-/* Testimoni Cheeeck */
-.testimonial-section {
+/* ==== TESTIMONI SECTION ==== */
+.testimoni-section {
   background-color: #FFF9F2;
   text-align: center;
-  padding: 60px 20px;
+}
+
+.container-testimoni {
+  padding: 75px 0px;
 }
 
 .testimonial-section h2 {
@@ -259,14 +304,15 @@ nav ul li {
 
 .testimonial-section p {
   color: #A78C7B;
-  font-size: 18px;
+  font-size: 18px; 
 }
 
 .testimonial-card {
+  background-color: #FFFFFF;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
-  margin: 60px 20px 30px 20px;
-  padding: 14px 19px 21px 45px; 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  margin: 60px 20px 60px 20px;
+  padding: 56px 29px 21px 45px; 
   width: 420px;
   height: 204px;
   text-align: left;
@@ -278,25 +324,24 @@ nav ul li {
 }
 
 .testimonial-card img {
-  width: 72px;
-  height: 72px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.10);
   background: #fff;
   position: absolute;
-  top: -36px;
-  left: 32px;
+  top: -50px;
+  left: -50px;
   z-index: 2;
 }
 
 .stars {
-  color: #f7b733;
+  color: #D4AF7F;
   position: absolute;
-  top: 18px;
+  top: 14;
   right: 32px;
-  font-size: 22px;
+  font-size: 30px;
   letter-spacing: 2px;
   z-index: 2;
 }
@@ -305,9 +350,10 @@ nav ul li {
   font-size: 15px;
     font-size: 15px !important;
     font-family: 'Playfair Display', serif !important;
-  margin-bottom: 18px;
-  color: #444;
-  margin-top: 32px;
+  font-style: italic;
+  margin-bottom: 12px;
+  color: #444444;
+  padding-top: 40px;
 }
 
 .author {
@@ -315,8 +361,16 @@ nav ul li {
   font-size: 15px;
     font-size: 15px !important;
     font-family: 'Playfair Display', serif !important;
-  margin-bottom: 2px;
-  margin-top: 0;
+  color: #A78C7B;
+}
+
+.author-work {
+  font-weight: 600;
+  font-size: 15px;
+    font-size: 15px !important;
+    font-family: 'Playfair Display', serif !important;
+  color: #888888;
+  margin-top: -18px;
 }
 
 .role {
@@ -337,8 +391,32 @@ nav ul li {
   width: 100%;
 }
 
+.control-button {
+  background: #fff;              /* warna putih */
+  border: 1px solid #c9a8a9;     /* border tipis abu pink */
+  border-radius: 50%;            /* jadi bulat */
+  width: 50px;
+  height: 50px;
+  justify-content: bottom;
+  align-items: center;
+  margin: 0 20px;                 /* jarak antar tombol */
+  transition: all 0.3s ease;
+}
 
-/* GENDER STYLING */
+.control-button:hover {
+  background: #f7f3f3;           /* sedikit abu pas hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(40%) sepia(20%) saturate(300%) hue-rotate(320deg); 
+  /* bikin panah warna coklat */
+  width: 30px;
+  height: 30px;
+}
+
+
+/* ==== GENDER STYLING ==== */
 .container {
     max-width: 1400px;
     background-color: #FFF4EE;
@@ -403,7 +481,7 @@ nav ul li {
 }
 
 
-/* SEARCH PRODUCT SECTION */
+/* ==== SEARCH PRODUCT SECTION ==== */
 .container-search {
   padding-left: 155px;  /* jarak kiri */
   padding-right: 156px; /* jarak kanan */
@@ -499,7 +577,7 @@ nav ul li {
   opacity: 0.9;
 }
 
-/* NEW ARRIVALSSSSS */
+/* ==== NEW ARRIVALSSSSS ==== */
 .new-arrivals-section {
   height: 1486px;
   background-color: #FFF4EE;
@@ -622,7 +700,7 @@ nav ul li {
   justify-content: center;
 }
 
-/* PROMO */
+/* ==== PROMO ==== */
 .promo-section {
   background: #FFF9F2;
 }
@@ -707,7 +785,7 @@ nav ul li {
   background: #e4cfc2;
 }
 
-/* HOW IT WORKS */
+/* ==== HOW IT WORKS ==== */
 .howitworks-section {
   background: #fff6f0;
 }
@@ -748,7 +826,7 @@ nav ul li {
   color: #555;
 }
 
-/* ABOUT SECTION */
+/* ==== ABOUT SECTION ==== */
 .about {
   background-color: #fef7f2; /* warna background lembut */
 }
@@ -778,7 +856,7 @@ nav ul li {
   color: #fff;
 }
 
-/* TIM SECTION */
+/* ==== TIM SECTION ==== */
 .team {
   background-color: #fcf5f2; /* warna lembut */
 }
@@ -819,7 +897,7 @@ nav ul li {
   color: #fff;
 }
 
-/* KEUNGGULAN PRODUK */
+/* ==== KEUNGGULAN PRODUK ==== */
 .card img {
   width: 120px;
   height: 120px;
@@ -944,7 +1022,7 @@ nav ul li {
   }
 
   .tagline-bar .divider {
-    display: none; /* divider disembunyikan biar nggak maksa */
+    display: none; 
   }
 }
 
