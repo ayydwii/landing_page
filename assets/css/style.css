@@ -805,18 +805,23 @@ nav ul li {
 /* ==== HOW IT WORKS ==== */
 .howitworks-section {
   background: #fff6f0;
+  padding: 75px;
+  font-family: 'playfair display', serif;
 }
 
 .howitworks-title {
-  font-size: 1.8rem;
+  font-size: 40px;
   font-weight: 700;
-  color: #222;
+  color: #2A2A2A;
+  margin-bottom: 7px;
+  text-align: center;
 }
 
 .howitworks-subtitle {
-  font-size: 1rem;
-  color: #777;
-  margin-bottom: 2rem;
+  font-size: 18px;
+  color: #6B6B6B;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .howitworks-item {
@@ -832,39 +837,54 @@ nav ul li {
 }
 
 .howitworks-step {
-  font-size: 1.2rem;
+  font-size: 30px;
   font-weight: bold;
-  color: #333;
+  color: #333333;
   margin-bottom: 5px;
 }
 
 .howitworks-text {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 16px;
+  color: #6B6B6B;
 }
+
+/* Perkecil jarak antar item how it works */
+.howitworks-row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.howitworks-row .col-6,
+.howitworks-row .col-md-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 
 /* ==== ABOUT SECTION ==== */
 .about {
-  background-color: #fef7f2; /* warna background lembut */
+  background-color: #FFF9F2; /* warna background lembut */
+  padding: 75px 132px;
 }
 
 .about h2 {
   font-family: 'Playfair Display', serif;
+  font-size: 40px;
   font-weight: 700;
-  color: #333;
+  color: #2A2A2A;
 }
 
 .about p {
-  color: #555;
+  color: #4D4D4D;
   line-height: 1.7;
 }
 
 .btn-custom {
-  background-color: #d4a373;
+  background-color: #D8B6A4;
   color: #fff;
-  border-radius: 30px;
-  padding: 10px 25px;
-  font-size: 0.9rem;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-size: 15px;
   transition: 0.3s ease;
 }
 
@@ -875,20 +895,41 @@ nav ul li {
 
 /* ==== TIM SECTION ==== */
 .team {
-  background-color: #fcf5f2; /* warna lembut */
+  background-color: #FFF4EE; /* warna lembut */
+  padding: 75px 72px;
+  font-family: 'playfair display', serif;
+}
+
+.team-title {
+  font-size: 40px;
+  font-weight: 700;
+  align-items: left;
+  color: #2A2A2A;
+  margin-bottom: 7px;
+}
+
+.team-subtitle {
+  font-size: 18px;
+  align-items: left;
+  color: #A5978B;
+  margin-bottom: 60px;
+}
+
+.custom-gap {
+  --bs-gutter-x: 23px;
+  --bs-gutter-y: 23px;
+}
+
+.custom-gap > [class*="col-"] {
+  flex: 0 0 auto; 
 }
 
 .team-card {
-  border: none;
-  border-radius: 15px;
+  height: 366px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 .team-card img {
@@ -896,16 +937,40 @@ nav ul li {
   height: 280px;
 }
 
+.card img {
+  height: 288px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 6px 60px 17px 29px;
+}
+
 .team-card h5 {
   font-weight: 600;
   margin-bottom: 5px;
 }
 
+.title-card {
+  font-size: 25px;
+  color: #1C1C1C;
+}
+
+.text-card {
+  font-size: 15px;
+  color: #A5978B;
+}
+
+.button {
+  margin-top: 60px;
+  text-align: center;
+}
+
 .btn-custom {
-  background-color: #b8926a;
+  background-color: #D8B6A4;
   color: #fff;
-  border-radius: 25px;
-  padding: 10px 20px;
+  border-radius: 20px;
+  padding: 6px 20px;
   transition: 0.3s ease;
 }
 
@@ -915,13 +980,6 @@ nav ul li {
 }
 
 /* ==== KEUNGGULAN PRODUK ==== */
-.card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
 
 
 
